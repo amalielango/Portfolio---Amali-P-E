@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amali P E | Portfolio</title>
+
+  <!-- React CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    header h2 {
+      font-weight: 300;
+      color: #00e0ff;
+    }
+
+    section {
+      padding: 2rem;
+      margin: 1.5rem auto;
+      width: 90%;
+      max-width: 950px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.4s ease;
+    }
+
+    section:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #00e0ff;
+      padding-bottom: 0.5rem;
+      color: #00e0ff;
+    }
+
+    .skills, .certifications {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill, .cert {
+      background: #00e0ff;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      margin: 0.5rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .skill:hover, .cert:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    .project {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background: rgba(0,224,255,0.1);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      background: rgba(0,224,255,0.2);
+    }
+
+    a {
+      color: #00e0ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      background: rgba(0,0,0,0.6);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function App() {
+      return (
+        <div>
+
+          <header>
+            <h1>AMALI P E</h1>
+            <h2>Software Engineer | AI & Web Developer</h2>
+          </header>
+
+          <section>
+            <h3>Profile Summary</h3>
+            <p>
+              Motivated Computer Science Engineering student passionate about Artificial Intelligence,
+              Web Development, and Smart Systems. Strong in C, Java, Python and Front-End technologies.
+              Interested in solving real-world problems using intelligent and scalable solutions.
+            </p>
+          </section>
+
+          <section>
+            <h3>Contact</h3>
+            <p><strong>Phone:</strong> +91 6374471515</p>
+            <p><strong>Email:</strong> <a href="mailto:amali09122005@gmail.com">amali09122005@gmail.com</a></p>
+            <p><strong>Location:</strong> Karur, Tamil Nadu</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amali-pe-98167b293" target="_blank">amali-pe-98167b293</a></p>
+          </section>
+
+          <section>
+            <h3>Education</h3>
+            <p><strong>K.S.V Higher Secondary School</strong> (2021–2023) – 86.83%</p>
+            <p><strong>M. Kumarasamy College of Engineering</strong> (2023–2027)</p>
+            <p>B.E Computer Science – CGPA: 7 (up to 4th semester)</p>
+          </section>
+
+          <section>
+            <h3>Skills</h3>
+            <div className="skills">
+              <div className="skill">HTML & CSS</div>
+              <div className="skill">Java</div>
+              <div className="skill">Python</div>
+              <div className="skill">C Programming</div>
+              <div className="skill">OOPs</div>
+              <div className="skill">Project Management</div>
+              <div className="skill">UI/UX Design</div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Projects</h3>
+
+            <div className="project">
+              <h4>Smart Insect Identifier and Bite Toxicity Analyzer (2024–2025)</h4>
+              <p>
+                AI-powered system that identifies insect species using deep learning image classification 
+                and analyzes bite toxicity levels. Designed to help users detect harmful insects and 
+                receive early safety alerts through intelligent prediction models.
+              </p>
+            </div>
+
+            <div className="project">
+              <h4>Traffic Light Timing Controller (2024–2025)</h4>
+              <p>
+                Developed a traffic management system using queue data structures 
+                to optimize signal timing dynamically based on traffic density.
+              </p>
+            </div>
+
+            <div className="project">
+              <h4>Credit Card Fraud Detection (2023–2024)</h4>
+              <p>
+                Java-based fraud detection system using rule-based logic and statistical analysis 
+                to detect suspicious transactions in real-time.
+              </p>
+            </div>
+
+          </section>
+
+          <section>
+            <h3>Internship Experience</h3>
+            <p><strong>Role:</strong> UI/UX Developer</p>
+            <p><strong>Company:</strong> MITA IT Automations Pvt. Ltd.</p>
+            <p><strong>Duration:</strong> 15 Days</p>
+            <p><strong>Location:</strong> Dindugal</p>
+          </section>
+
+          <section>
+            <h3>Certifications</h3>
+            <div className="certifications">
+              <div className="cert">NPTEL Elite + Silver – Introduction to Industry 4.0 and Internet of Things (79%)</div>
+              <div className="cert">NPTEL – Design & Implementation of Human Computer Interface (52%)</div>
+              <div className="cert">Coursera – Investment Risk Management</div>
+            </div>
+          </section>
+
+          <footer>
+            <p>© 2025 Amali P E | Built with React.js</p>
+          </footer>
+
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+</html>
